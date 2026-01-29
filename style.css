@@ -588,6 +588,7 @@ footer {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 /*======= ABOUT PAGE ========================= */
+/*======= ABOUT PAGE ========================= */
 
 .hero-about {
     background: url('picture/setiubeach3.jpg') no-repeat center center/cover;
@@ -647,6 +648,67 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     color: #4a5568;
+}/*======= ABOUT PAGE ========================= */
+
+.hero-about {
+    background: url('picture/setiubeach3.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.about-title {
+    color: #f1c40f; 
+}
+
+.about-text p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* ROWS */
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT */
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
 }
 
 .about-image {
@@ -661,50 +723,90 @@ footer {
     object-fit: cover;
 }
 
-/* VIEW MORE BUTTON */
-.btn-view-more {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 24px;
-    background-color: #1f7a5c;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.about-image {
+    flex: 1;
 }
 
-.btn-view-more:hover {
-    background-color: #155f48;
-    transform: translateY(-2px);
-}
-/* VIDEO SECTION */
-.video-section {
-    padding: 60px 10%;
-    text-align: center;
-    background-color: #f9f9f9;
+.about-image img {
+    width: 70%;       
+    max-width: 400px; 
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
 }
 
-.video-section h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+/* COMMUNITY SECTION STYLES */
+.community-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.video-section p {
-    font-size: 16px;
-    max-width: 700px;
-    margin: 0 auto 25px;
+/* Each row: text + video/image */
+.community-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Reverse layout for alternating rows */
+.community-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text styling */
+.community-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.community-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1f4e79;
+}
+
+.community-text p {
+    font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    margin-bottom: 1.2rem;
 }
 
-.video-section video {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+/* Button for Traditional section */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #16395a;
+}
+
+/* Video & image styling */
+.community-video,
+.community-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.community-video video,
+.community-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 
 /*=======HISTORY PAGE =======*/
 
@@ -716,19 +818,6 @@ footer {
     align-items: center;
     text-align: center;
     position: relative;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.history-title {
-    color: #f1c40f; 
-}
-
-.hero-text p {
-    font-size: 20px;
 }
 
 .cards-section {
