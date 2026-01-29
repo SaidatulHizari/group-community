@@ -485,6 +485,14 @@ nav ul li a.active {
 
 
 
+
+
+
+
+
+
+
+
 /*=======HISTORY PAGE =======*/
 
 .hero {
@@ -519,14 +527,21 @@ nav ul li a.active {
     background-color: #f0f4f8;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    overflow: hidden;
     flex: 1;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
@@ -541,16 +556,59 @@ nav ul li a.active {
     font-size: 20px;
 }
 
-.card-desc {
-    margin: 0 15px 15px 15px;
-    display: none; 
-    color: #4a5568;
+.card p {
+    margin: 0 15px 15px;
     font-size: 15px;
+    color: #4a5568;
 }
 
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(139,94,60,0.55); /* coklat cair, separuh transparan */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow-y: auto;
+}
 
+/* BILA POPUP DIKLIK */
+.popup:target {
+    display: flex;
+}
 
+/* MODAL BOX (KOTAK PUTIH) */
+.modal-content {
+    background: #fff;   /* kotak putih */
+    padding: 25px 30px;
+    width: 70%;
+    max-width: 750px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    position: relative;
+}
 
+/* CLOSE BUTTON */
+.modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* TEXT */
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    color: #333;
+    line-height: 1.8;
+}
 
 
 

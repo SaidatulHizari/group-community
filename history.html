@@ -52,33 +52,84 @@
 </section>
 
 <section class="cards-section">
-    <div class="card" onclick="toggleDescription(1)">
-    <img src="picture/history1.jpg" alt="History 1">
-    <h3>Historical Site 1</h3>
-    <p class="card-desc" id="desc1">This site is famous for its ancient architecture and stories dating back centuries...</p>
+    <div class="card">
+        <a href="#history">
+            <img src="picture/setiuhistory2.jpg" alt="History">
+            <h3>History</h3>
+            <p>Click to read the full history</p>
+        </a>
     </div>
 
-    <div class="card" onclick="toggleDescription(2)">
-    <img src="picture/history2.jpg" alt="History 2">
-    <h3>Historical Site 2</h3>
-    <p class="card-desc" id="desc2">A place that reflects the unique traditions and local heritage of Setiu...</p>
+    <div class="card">
+        <a href="#culture">
+            <img src="picture/setiuculture.jpg" alt="culture">
+            <h3>Culture</h3>
+            <p>Click to read more</p>
+        </a>
     </div>
 
-    <div class="card" onclick="toggleDescription(3)">
-    <img src="picture/history3.jpg" alt="History 3">
-    <h3>Historical Site 3</h3>
-    <p class="card-desc" id="desc3">Explore the stories and events that shaped the community here...</p>
+    <div class="card">
+        <a href="#heritage">
+            <img src="picture/setiuheritage.jpg" alt="heritage">
+            <h3>Heritage</h3>
+            <p>Click to read more</p>
+        </a>
     </div>
 </section>
 
-<script>
-function toggleDescription(id) {
-    const desc = document.getElementById('desc' + id);
-    if(desc.style.display === 'block') {
-        desc.style.display = 'none';} 
-        else {desc.style.display = 'block'; }
-}
-</script>
+<!-- POPUPS -->
+<div id="history" class="popup">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>History of Setiu</h2>
+        <p>
+            Setiu is a district rich in history and cultural heritage.
+            It is believed that Setiu was named after Tok Setiu, a Bugis warrior
+            who fled his homeland in the 1770s after conflicts with the Dutch.
+            Tok Setiu later settled in Terengganu with the permission of Sultan
+            Ahmad II and established Kampung Bukit Tok Setiu.
+            His contributions to agriculture, irrigation systems and cultural
+            traditions helped shape the community. Over time, the area became
+            known as Setiu and later developed into an official district.
+        </p>
+    </div>
+</div>
+
+<div id="culture" class="popup">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Culture</h2>
+        <p>Setiu’s culture is vibrant and deeply rooted in local traditions. 
+        The community preserves performing arts, martial arts, and traditional games. Silat, 
+        the local martial art is widely practiced and taught while Mak Yong performances are held 
+        during festivals and special events. Traditional games like gasing (top-spinning) and buffalo racing 
+        continue to bring people together. Local customs, storytelling and ceremonies reflect the everyday 
+        life of the community and keep their cultural identity alive.</p>
+    </div>
+</div>
+
+<div id="heritage" class="popup">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Heritage</h2>
+        <p>Setiu’s heritage reflects its history, environment, and way of life. The community maintains 
+            practices in agriculture, fishing and handicrafts that have been passed down through generations. 
+            Traditional architecture, village layouts, and river systems are preserved as part of their historical identity. 
+            Local cuisine, crafts and cultural rituals connect the present community to its past while festivals and communal 
+            activities ensure that Setiu’s heritage continues to be celebrated and cherished by future generations.</p>
+    </div>
+</div>
+
+ <script>
+        function toggleDescription(id) {
+            const desc = document.getElementById('desc' + id);
+            if (desc.style.display === "block") {
+                desc.style.display = "none";
+            } else {
+                desc.style.display = "block";
+            }
+        }
+    </script>
 
 
 
