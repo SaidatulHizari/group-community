@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warna Warni Setiu | Terengganu</title>
+    <title>Contact Us</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -47,3 +47,75 @@
     </ul>
 </nav>
     </header>
+
+    <!-- HERO HEADER (STATIC IMAGE) -->
+    <section class="hero">
+        <img src="picture/pantai.jpg" alt="Setiu Beach">
+
+        <div class="hero-text">
+            <h2>Welcome to Setiu</h2>
+            <p>Discover peaceful wetlands, beautiful beaches and rich Terengganu culture.</p>
+            <a href="about.html" class="btn-explore">Explore Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
+    </footer>
+
+<script>
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+document.querySelectorAll(".scroll-animate").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
