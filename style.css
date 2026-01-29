@@ -501,7 +501,6 @@ nav ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
     position: relative;
 }
@@ -509,6 +508,10 @@ nav ul li a.active {
 .hero-text h1 {
     font-size: 48px;
     margin-bottom: 10px;
+}
+
+.history-title {
+    color: #f1c40f; 
 }
 
 .hero-text p {
@@ -562,26 +565,26 @@ nav ul li a.active {
     color: #4a5568;
 }
 
-/* POPUP */
+
 .popup {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(139,94,60,0.55); /* coklat cair, separuh transparan */
+    background: rgba(139,94,60,0.55); 
     justify-content: center;
     align-items: center;
     padding: 30px;
     overflow-y: auto;
 }
 
-/* BILA POPUP DIKLIK */
+
 .popup:target {
     display: flex;
 }
 
-/* MODAL BOX (KOTAK PUTIH) */
+
 .modal-content {
-    background: #fff;   /* kotak putih */
+    background: #fff;   
     padding: 25px 30px;
     width: 70%;
     max-width: 750px;
@@ -590,7 +593,7 @@ nav ul li a.active {
     position: relative;
 }
 
-/* CLOSE BUTTON */
+
 .modal-content .close {
     position: absolute;
     top: 15px;
@@ -600,7 +603,7 @@ nav ul li a.active {
     text-decoration: none;
 }
 
-/* TEXT */
+
 .modal-content h2 {
     margin-top: 0;
 }
@@ -609,6 +612,113 @@ nav ul li a.active {
     color: #333;
     line-height: 1.8;
 }
+
+
+
+
+
+
+
+
+
+
+/*=======NATURE PAGE =======*/
+
+.hero-nature {
+    background: url('picture/setiubeach3.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.nature-title {
+    color: #f1c40f; 
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.nature-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* ROWS */
+.nature-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT */
+.nature-text {
+    flex: 1;
+}
+
+.nature-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.nature-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.nature-image {
+    flex: 1;
+}
+
+.nature-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
