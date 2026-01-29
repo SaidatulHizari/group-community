@@ -40,7 +40,7 @@
 
         <!-- NO DROPDOWN (single item) -->
         <li><a href="localbusiness.html">Local Business Directory</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </li>
 
@@ -58,3 +58,58 @@
             <a href="#" class="btn-explore">Explore Now</a>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
+    </footer>
+
+<script>
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+document.querySelectorAll(".scroll-animate").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
