@@ -113,3 +113,58 @@ document.querySelectorAll(".scroll-animate").forEach(el => {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
+    </footer>
+
+<script>
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+document.querySelectorAll(".scroll-animate").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
