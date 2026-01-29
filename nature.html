@@ -38,9 +38,9 @@
 
         <li><a href="food.html">Food & Local Product</a></li>
 
-        <!-- NO DROPDOWN (single item) -->
+       
         <li><a href="localbusiness.html">Local Business Directory</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </li>
 
@@ -48,70 +48,54 @@
 </nav>
     </header>
 
-    <!-- HERO HEADER (STATIC IMAGE) -->
-    <section class="hero">
-        <img src="picture/pantai.jpg" alt="Setiu Beach">
+   <section class="hero-nature">
+    <div class="hero-text">
+        <h1 class="nature-title">Nature & Local Environment</h1>
+        <p>Explore the natural beauty and environment of Setiu.</p>
+    </div>
+</section>
 
-        <div class="hero-text">
-            <h2>Welcome to Setiu</h2>
-            <p>Discover peaceful wetlands, beautiful beaches and rich Terengganu culture.</p>
-            <a href="#" class="btn-explore">Explore Now</a>
+<!-- NATURE CONTENT SECTION -->
+<section class="nature-section">
+
+    <div class="nature-row">
+        <div class="nature-text">
+            <h2>Rich Biodiversity</h2>
+            <p>
+                Setiu is home to a diverse range of flora and fauna. Its rivers, mangroves, and forests 
+                provide habitats for many species, including rare birds and aquatic life. Conservation 
+                efforts are ongoing to protect these natural resources for future generations.
+            </p>
         </div>
-    </section>
 
+      <div class="nature-image">
+            <img src="picture/setiufauna.jpg" alt="Setiu turtle">
+        </div>
+    </div>
 
+    <div class="nature-row reverse">
+        <div class="nature-image">
+            <img src="picture/setiuactivities.jpg" alt="Local Environment">
+        </div>
+        <div class="nature-text">
+            <h2>Local Environment & Activities</h2>
+            <p>
+                The local environment of Setiu supports traditional livelihoods such as fishing, 
+                farming, and eco-tourism activities. Visitors can enjoy scenic rivers, wetlands, 
+                and serene landscapes while experiencing the community's sustainable way of life.
+            </p>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- FOOTER -->
+</section>
+  
     <footer>
-        <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
+        <p>&copy; 2026 Setiu, Terengganu. All Rights Reserved.</p>
+        <p>Developed by Group Project</p>
     </footer>
 
-<script>
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    },
-    {
-        threshold: 0.2
-    }
-);
-
-document.querySelectorAll(".scroll-animate").forEach(el => {
-    observer.observe(el);
-});
-</script>
-
 </body>
+
 </html>
 
 
