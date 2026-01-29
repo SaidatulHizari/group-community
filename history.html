@@ -44,6 +44,48 @@
 </nav>
     </header>
 
+<section class="hero">
+    <div class="hero-text">
+    <h1>History, Culture & Heritage</h1>
+    <p>Discover the rich history of Setiu and its vibrant culture.</p>
+    </div>
+</section>
+
+<section class="cards-section">
+    <div class="card" onclick="toggleDescription(1)">
+    <img src="picture/history1.jpg" alt="History 1">
+    <h3>Historical Site 1</h3>
+    <p class="card-desc" id="desc1">This site is famous for its ancient architecture and stories dating back centuries...</p>
+    </div>
+
+    <div class="card" onclick="toggleDescription(2)">
+    <img src="picture/history2.jpg" alt="History 2">
+    <h3>Historical Site 2</h3>
+    <p class="card-desc" id="desc2">A place that reflects the unique traditions and local heritage of Setiu...</p>
+    </div>
+
+    <div class="card" onclick="toggleDescription(3)">
+    <img src="picture/history3.jpg" alt="History 3">
+    <h3>Historical Site 3</h3>
+    <p class="card-desc" id="desc3">Explore the stories and events that shaped the community here...</p>
+    </div>
+</section>
+
+<script>
+function toggleDescription(id) {
+    const desc = document.getElementById('desc' + id);
+    if(desc.style.display === 'block') {
+        desc.style.display = 'none';} 
+        else {desc.style.display = 'block'; }
+}
+</script>
+
+
+
+
+
+
+
     <footer>
         <p>&copy; 2026 Setiu, Terengganu. All Rights Reserved.</p>
         <p>Developed by Group Project</p>
