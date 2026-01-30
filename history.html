@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,120 +12,124 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVIGATION BAR -->
     <header>
         <div class="logo">
-    <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
-    <span>Warna Warni Setiu</span>
+            <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
+            <span>Warna Warni Setiu</span>
         </div>
 
-    <nav>
-    <ul class="nav-menu">
+        <nav>
+            <ul class="nav-menu">
 
-        <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-        <li class="dropdown">
-            <a href="about.html">About ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="about.html">About the Community</a></li>
-                <li><a href="history.html">History, Culture & Heritage</a></li>
-                <li><a href="nature.html">Nature & Local Environment</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About the Community</a></li>
+                        <li><a href="history.html">History, Culture & Heritage</a></li>
+                        <li><a href="nature.html">Nature & Local Environment</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="thingstodo.html">Things to Do</a></li>
+
+                <li><a href="food.html">Food & Local Product</a></li>
+
+                <!-- NO DROPDOWN (single item) -->
+                <li><a href="localbusiness.html">Local Business Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </li>
+            </li>
 
-        <li><a href="thingstodo.html">Things to Do</a></li>
-
-        <li><a href="food.html">Food & Local Product</a></li>
-
-        <!-- NO DROPDOWN (single item) -->
-        <li><a href="localbusiness.html">Local Business Directory</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </li>
+        </nav>
+    </header>
 
-    </ul>
-</nav>
-    </header>  
-    
-<section class="hero">
-    <div class="hero-text">
-     <h1 class="history-title">History, Culture & Heritage</h1>
-        <p>Discover the rich history of Setiu and its vibrant culture.</p>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="history-title">History, Culture & Heritage</h1>
+            <p>Discover the rich history of Setiu and its vibrant culture.</p>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="card">
+            <a href="#history">
+                <img src="picture/setiuhistory2.jpg" alt="History">
+                <h3>History</h3>
+                <p>Click to read the full history</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#culture">
+                <img src="picture/setiuculture.jpg" alt="culture">
+                <h3>Culture</h3>
+                <p>Click to read more</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#heritage">
+                <img src="picture/setiuheritage.jpg" alt="heritage">
+                <h3>Heritage</h3>
+                <p>Click to read more</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- POPUPS -->
+    <div id="history" class="popup">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>History of Setiu</h2>
+            <p>
+                Setiu is a district rich in history and cultural heritage.
+                It is believed that Setiu was named after Tok Setiu, a Bugis warrior
+                who fled his homeland in the 1770s after conflicts with the Dutch.
+                Tok Setiu later settled in Terengganu with the permission of Sultan
+                Ahmad II and established Kampung Bukit Tok Setiu.
+                His contributions to agriculture, irrigation systems and cultural
+                traditions helped shape the community. Over time, the area became
+                known as Setiu and later developed into an official district.
+            </p>
+        </div>
     </div>
-</section>
 
-<section class="cards-section">
-    <div class="card">
-        <a href="#history">
-            <img src="picture/setiuhistory2.jpg" alt="History">
-            <h3>History</h3>
-            <p>Click to read the full history</p>
-        </a>
+    <div id="culture" class="popup">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Culture</h2>
+            <p>Setiu’s culture is vibrant and deeply rooted in local traditions.
+                The community preserves performing arts, martial arts, and traditional games. Silat,
+                the local martial art is widely practiced and taught while Mak Yong performances are held
+                during festivals and special events. Traditional games like gasing (top-spinning) and buffalo racing
+                continue to bring people together. Local customs, storytelling and ceremonies reflect the everyday
+                life of the community and keep their cultural identity alive.</p>
+        </div>
     </div>
 
-    <div class="card">
-        <a href="#culture">
-            <img src="picture/setiuculture.jpg" alt="culture">
-            <h3>Culture</h3>
-            <p>Click to read more</p>
-        </a>
+    <div id="heritage" class="popup">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Heritage</h2>
+            <p>Setiu’s heritage reflects its history, environment, and way of life. The community maintains
+                practices in agriculture, fishing and handicrafts that have been passed down through generations.
+                Traditional architecture, village layouts, and river systems are preserved as part of their historical
+                identity.
+                Local cuisine, crafts and cultural rituals connect the present community to its past while festivals and
+                communal
+                activities ensure that Setiu’s heritage continues to be celebrated and cherished by future generations.
+            </p>
+        </div>
     </div>
 
-    <div class="card">
-        <a href="#heritage">
-            <img src="picture/setiuheritage.jpg" alt="heritage">
-            <h3>Heritage</h3>
-            <p>Click to read more</p>
-        </a>
-    </div>
-</section>
-
-<!-- POPUPS -->
-<div id="history" class="popup">
-    <div class="modal-content">
-        <a href="#" class="close">&times;</a>
-        <h2>History of Setiu</h2>
-        <p>
-            Setiu is a district rich in history and cultural heritage.
-            It is believed that Setiu was named after Tok Setiu, a Bugis warrior
-            who fled his homeland in the 1770s after conflicts with the Dutch.
-            Tok Setiu later settled in Terengganu with the permission of Sultan
-            Ahmad II and established Kampung Bukit Tok Setiu.
-            His contributions to agriculture, irrigation systems and cultural
-            traditions helped shape the community. Over time, the area became
-            known as Setiu and later developed into an official district.
-        </p>
-    </div>
-</div>
-
-<div id="culture" class="popup">
-    <div class="modal-content">
-        <a href="#" class="close">&times;</a>
-        <h2>Culture</h2>
-        <p>Setiu’s culture is vibrant and deeply rooted in local traditions. 
-        The community preserves performing arts, martial arts, and traditional games. Silat, 
-        the local martial art is widely practiced and taught while Mak Yong performances are held 
-        during festivals and special events. Traditional games like gasing (top-spinning) and buffalo racing 
-        continue to bring people together. Local customs, storytelling and ceremonies reflect the everyday 
-        life of the community and keep their cultural identity alive.</p>
-    </div>
-</div>
-
-<div id="heritage" class="popup">
-    <div class="modal-content">
-        <a href="#" class="close">&times;</a>
-        <h2>Heritage</h2>
-        <p>Setiu’s heritage reflects its history, environment, and way of life. The community maintains 
-            practices in agriculture, fishing and handicrafts that have been passed down through generations. 
-            Traditional architecture, village layouts, and river systems are preserved as part of their historical identity. 
-            Local cuisine, crafts and cultural rituals connect the present community to its past while festivals and communal 
-            activities ensure that Setiu’s heritage continues to be celebrated and cherished by future generations.</p>
-    </div>
-</div>
-
- <script>
+    <script>
         function toggleDescription(id) {
             const desc = document.getElementById('desc' + id);
             if (desc.style.display === "block") {
@@ -135,31 +140,32 @@
         }
     </script>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
     </footer>
 
-<script>
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+    <script>
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            },
+            {
+                threshold: 0.2
             }
-        });
-    },
-    {
-        threshold: 0.2
-    }
-);
+        );
 
-document.querySelectorAll(".scroll-animate").forEach(el => {
-    observer.observe(el);
-});
-</script>
+        document.querySelectorAll(".scroll-animate").forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 
 </body>
+
 </html>
 
 </body>

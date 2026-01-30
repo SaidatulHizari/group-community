@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +12,42 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVIGATION BAR -->
     <header>
         <div class="logo">
-    <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
-    <span>Warna Warni Setiu</span>
+            <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
+            <span>Warna Warni Setiu</span>
         </div>
 
-    <nav>
-    <ul class="nav-menu">
+        <nav>
+            <ul class="nav-menu">
 
-        <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-        <li class="dropdown">
-            <a href="about.html">About ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="about.html">About the Community</a></li>
-                <li><a href="history.html">History, Culture & Heritage</a></li>
-                <li><a href="nature.html">Nature & Local Environment</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About the Community</a></li>
+                        <li><a href="history.html">History, Culture & Heritage</a></li>
+                        <li><a href="nature.html">Nature & Local Environment</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="thingstodo.html">Things to Do</a></li>
+
+                <li><a href="food.html">Food & Local Product</a></li>
+
+                <!-- NO DROPDOWN (single item) -->
+                <li><a href="localbusiness.html">Local Business Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </li>
+            </li>
 
-        <li><a href="thingstodo.html">Things to Do</a></li>
-
-        <li><a href="food.html">Food & Local Product</a></li>
-
-        <!-- NO DROPDOWN (single item) -->
-        <li><a href="localbusiness.html">Local Business Directory</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </li>
-
-    </ul>
-</nav>
+        </nav>
     </header>
 
     <!-- HERO HEADER (STATIC IMAGE) -->
@@ -95,31 +97,32 @@
 
 
 
-    
+
 
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
     </footer>
 
-<script>
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+    <script>
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            },
+            {
+                threshold: 0.2
             }
-        });
-    },
-    {
-        threshold: 0.2
-    }
-);
+        );
 
-document.querySelectorAll(".scroll-animate").forEach(el => {
-    observer.observe(el);
-});
-</script>
+        document.querySelectorAll(".scroll-animate").forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 
 </body>
+
 </html>
