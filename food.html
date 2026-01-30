@@ -1,198 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Food and Local product | Setiu </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warna Warni Setiu | Terengganu</title>
 
-<body>
-    <!-- Google Font -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
+<body>
 
-    <body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo">
+    <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
+    <span>Warna Warni Setiu</span>
+        </div>
 
-        <!-- NAVIGATION BAR -->
-        <header>
-            <div class="logo">
-                <img src="picture/logo.png" alt="Warna Warni Setiu Logo">
-                <span>Warna Warni Setiu</span>
-            </div>
+   <nav>
+    <ul class="nav-menu">
 
-            <nav>
-                <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
 
-                    <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="about.html">About ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="about.html">About the Community</a></li>
+                <li><a href="history.html">History, Culture & Heritage</a></li>
+                <li><a href="nature.html">Nature & Local Environment</a></li>
+            </ul>
+        </li>
 
-                    <li class="dropdown">
-                        <a href="about.html">About ▾</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html">About the Community</a></li>
-                            <li><a href="history.html">History, Culture & Heritage</a></li>
-                            <li><a href="nature.html">Nature & Local Environment</a></li>
-                        </ul>
-                    </li>
+        <li><a href="thingstodo.html">Things to Do</a></li>
 
-                    <li><a href="thingstodo.html">Things to Do</a></li>
-                    <li><a href="food.html">Food & Local Product</a></li>
+        <li><a href="food.html">Food & Local Product</a></li>
 
-                    <!-- NO DROPDOWN (single item) -->
-                    <li><a href="localbusiness.html">Local Business Directory</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-                </li>
+        <li><a href="localbusiness.html">Local Business Directory</a></li>
 
-                </ul>
-            </nav>
-        </header>
+        <li><a href="contactus.html">Contact Us</a></li>
 
-        <!-- HERO HEADER (STATIC IMAGE) -->
-        <section class="hero">
-            <img src="picture/pantai.jpg" alt="Setiu Beach">
+    </ul>
+</nav>
 
-            <div class="hero-text">
-                <h2>Citarasa & Produk Tempatan Setiu</h2>
-                <p>Menjejaki keunikan kuliner dan hasil kraf warisan bumi Setiu, Terengganu</p>
+    </header>
+
+    <main class="main-content">
+
+         <!-- HERO HEADER (STATIC IMAGE) -->
+    <section class="hero">
+        <img src="picture/nasi kerabu.jpg" alt="Makanan Tradisional">
+
+        <div class="hero-text">
+             <h1>Setiu Tastes & Local Products</h1>
+            <p>Exploring unique culinary delights and heritage crafts from the land of Setiu, Terengganu.</p>
+
+        </div>
+    </section>
+
+        <section class="content-wrapper">
+            <div class="section-title">Food</div>
+            
+            <div class="custom-row">
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/satar.jpg" alt="fish satar"> 
+                    </div>
+                    <div class="food-info">
+                        <h3>Satar Ikan</h3>
+                        <p>A traditional grilled fish cake snack made of spiced fish meat and coconut, wrapped in banana leaf cones. </p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/ikan celup tepung.jpg" alt="Ikan Celup Tepung">
+                    </div>
+                    <div class="food-info">
+                        <h3>Ikan celup Tepung</h3>
+                        <p>Fresh from the sea, enjoyed hot with a special dipping sauce.</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/nasi dagang.jpg" alt="Nasi Dagang">
+                    </div>
+                    <div class="food-info">
+                        <h3>Nasi Dagang</h3>
+                        <p>A combination of glutinous rice and tuna curry rich in spices.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!--Main content (food) -->
-        <main class="main-content">
-
-            <section class="section-wrapper">
-                <div class="badge-title">Aneka Juadah Tempatan</div>
-
-                <div class="product-grid">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/budu-setiu.jpg" alt="Budu Setiu">
-                        </div>
-                        <div class="card-info">
-                            <h3>Budu Tradisi Setiu</h3>
-                            <p>Ikonik Terengganu yang diproses secara tradisional di pesisir pantai Setiu.</p>
-                        </div>
+        <section class="content-wrapper">
+            <div class="section-title">Local Product</div>
+            
+            <div class="custom-row">
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/madu kelulut.jpg" alt="Stingless Bee Honey">
                     </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/ict.jpg" alt="Ikan Celup Tepung">
-                        </div>
-                        <div class="card-info">
-                            <h3>Ikan Celup Tepung (ICT)</h3>
-                            <p>Segar dari laut, dinikmati panas-panas dengan sos pencicah istimewa.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/nasi-dagang.jpg" alt="Nasi Dagang">
-                        </div>
-                        <div class="card-info">
-                            <h3>Nasi Dagang Setiu</h3>
-                            <p>Gabungan beras pulut dan kuah ikan tongkol yang kaya dengan rempah ratus.</p>
-                        </div>
+                    <div class="food-info">
+                        <h3>Madu Kelulut</h3>
+                        <p>Harvested from the nutritious mangroves of Setiu Wetlands.</p>
                     </div>
                 </div>
-            </section>
 
-            <!--Main content (local product) -->
-            <section class="section-wrapper">
-                <div class="badge-title">Produk Industri Kecil & Kraf</div>
-
-                <div class="product-grid">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/madu-kelulut.jpg" alt="Madu Kelulut">
-                        </div>
-                        <div class="card-info">
-                            <h3>Madu Kelulut Asli</h3>
-                            <p>Hasil hutan bakau Setiu Wetlands yang terkenal dengan khasiat tinggi.</p>
-                        </div>
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/anyaman mengkuang.jpg" alt="Weaving">
                     </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/anyaman-pandan.jpg" alt="Anyaman">
-                        </div>
-                        <div class="card-info">
-                            <h3>Anyaman Mengkuang</h3>
-                            <p>Seni warisan tangan wanita Setiu yang menghasilkan beg dan tikar cantik.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="picture/lekas.jpg" alt="Lekas Setiu">
-                        </div>
-                        <div class="card-info">
-                            <h3>Produk Hasil Laut</h3>
-                            <p>Keropok lekor dan hasil laut kering bermutu tinggi dari pengusaha lokal.</p>
-                        </div>
+                    <div class="food-info">
+                        <h3>Anyaman Mengkuang</h3>
+                        <p>Exquisite traditional heritage craft by the women of Setiu.</p>
                     </div>
                 </div>
-            </section>
 
-        </main>
+                <div class="food-card">
+                    <div class="image-container">
+                        <img src="picture/keropok-lekor.jpg" alt="Keropok lekor">
+                    </div>
+                    <div class="food-info">
+                        <h3>Keropok Lekor</h3>
+                        <p>High-quality keropok lekor and dried seafood from local entrepreneurs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+    </main>
 
+   <footer>
+        <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
+    </footer>
 
+<script>
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
 
+document.querySelectorAll(".scroll-animate").forEach(el => {
+    observer.observe(el);
+});
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- FOOTER -->
-        <footer>
-            <p>&copy; 2026 Warna Warni Setiu, Terengganu. All Rights Reserved.</p>
-        </footer>
-
-        <script>
-            const observer = new IntersectionObserver(
-                entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("show");
-                        }
-                    });
-                },
-                {
-                    threshold: 0.2
-                }
-            );
-
-            document.querySelectorAll(".scroll-animate").forEach(el => {
-                observer.observe(el);
-            });
-        </script>
-
-    </body>
-
-</html>
+</body>
+</html> 
