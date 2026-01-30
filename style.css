@@ -1045,6 +1045,71 @@ footer {
 
 
 
+/* ===========================
+   CONTAINER
+=========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* ===========================
+   GRID LAYOUT
+=========================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* ===========================
+   CARD DESIGN
+=========================== */
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ===========================
+   CARD IMAGE
+=========================== */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===========================
+   CARD CONTENT
+=========================== */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #0077b6;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #444;
+}
+
+
 
 /*=======FOOD AND LOCAL PRODUCT =======*/ 
 /* Container Utama */
