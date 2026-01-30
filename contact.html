@@ -136,6 +136,18 @@
         document.querySelectorAll(".scroll-animate").forEach(el => {
             observer.observe(el);
         });
+
+        // Force a page refresh when the user navigates back to this page
+        window.addEventListener("pageshow", function (event) {
+            var historyTraversal = event.persisted ||
+                (typeof window.performance != "undefined" &&
+                    window.performance.navigation.type === 2);
+            if (historyTraversal) {
+                // Handle page restore/back button by reloading
+                window.location.reload();
+            }
+        });
+
     </script>
 
 </body>
