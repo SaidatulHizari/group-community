@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Warna Warni Setiu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -36,15 +38,11 @@
                     </ul>
                 </li>
 
-                <li><a href="thingstodo.html">Things to Do</a></li>
-
-                <li><a href="food.html">Food & Local Product</a></li>
-
                 <!-- NO DROPDOWN (single item) -->
+                <li><a href="thingstodo.html">Things to Do</a></li>
+                <li><a href="food.html">Food & Local Product</a></li>
                 <li><a href="localbusiness.html">Local Business Directory</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            </li>
 
             </ul>
         </nav>
@@ -63,14 +61,13 @@
 
     <section class="contact-container scroll-animate">
         <div class="contact-grid">
-
             <div class="contact-info">
                 <h3>Get In Touch</h3>
                 <p>Have questions about visiting Setiu? We'd love to hear from you!</p>
 
                 <div class="info-item">
                     <strong>📍 Address:</strong>
-                    <p>Setiu Wetlands, 22100 Bandar Permaisuri, Terengganu, Malaysia</p>
+                    <p>Setiu Wetlands, 22100 Bandar Permaisuri, Terengganu</p>
                 </div>
 
                 <div class="info-item">
@@ -78,42 +75,43 @@
                     <p>+60 9-123 4567</p>
                 </div>
 
-                <div class="info-item">
-                    <strong>✉️ Email:</strong>
-                    <p>hello@warnawarnisetiu.my</p>
+                <div class="social-links">
+                    <p><strong>Follow Us:</strong></p>
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">TikTok</a>
                 </div>
             </div>
 
             <div class="contact-form">
-                <form action="#">
+                <form action="https://formspree.io/f/xeeklgzb" method="POST">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
-
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="general">General Inquiry</option>
-                            <option value="tourist">Tourist Information</option>
-                            <option value="business">Business Partnership</option>
-                        </select>
-                    </div>
-
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help?"
+                            required></textarea>
                     </div>
-
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
         </div>
+
+        <div class="map-container scroll-animate" style="margin-top: 50px;">
+            <h3>Our Location: Setiu Wetlands</h3>
+            <iframe width="100%" height="450"
+                style="border:0; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.625345672102!2d102.711586!3d5.672439999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7ff878e8e0333%3A0x5b8a691ba7b1bc74!2sSetiu%20Wetlands!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
     </section>
 
     <!-- FOOTER -->
@@ -141,4 +139,5 @@
     </script>
 
 </body>
+
 </html>
