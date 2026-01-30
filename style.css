@@ -1132,12 +1132,6 @@ footer {
     transform: translateY(-5px);
 }
 
-.image-container video {
-    border-radius: 12px;
-    height: 200px;
-    object-fit: cover;
-}
-
 /* WEBMASTER PAGE */
 body {
     font-family: Arial, sans-serif;
