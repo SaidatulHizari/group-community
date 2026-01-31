@@ -1438,3 +1438,71 @@ li {
 .activity-table tr:hover {
     background-color: #f9f9f9;
 }
+
+/* ============================================================= */
+/* Container for the whole page content */
+.webmaster-container {
+    padding: 120px 20px 60px; /* Space for fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle {
+    color: #1abc9c;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* The Grid Layout */
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* The Individual Card */
+.member-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Keeps image proportions clean */
+}
+
+.member-info {
+    padding: 20px;
+    background: #fff;
+}
+
+.member-info h3 {
+    font-size: 1.1rem;
+    color: #0b6e4f;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.student-id {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.course-details {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+/* ============================================================= */
